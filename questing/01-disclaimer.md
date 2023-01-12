@@ -1,4 +1,4 @@
-# Articles are not meant for arguements
+# Articles are not meant for arguing
 
 What if, just if, the truth of the world does not exist.
 
