@@ -4,7 +4,7 @@
 
 ## What is scheduling
 
-For the official definition of *scheduling*, please resort wikipedia: https://en.wikipedia.org/wiki/Scheduling_(computing)
+For the official definition of *scheduling*, please resort to wikipedia: https://en.wikipedia.org/wiki/Scheduling_(computing)
 
 Here I want to take some notes about how I figured out (maybe still not yet) what it is .
 
