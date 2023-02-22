@@ -49,4 +49,4 @@ def update_cpu_resources(resource_type, pod_path, value, period=100000):
         f.close()
 ```
 
-So far, you get all the information to bypass Kubernetes to operate the `cgroup` directly. Have fun!
+So far, you get all the information needed to bypass Kubernetes and operate the `cgroup` directly. Have fun!
