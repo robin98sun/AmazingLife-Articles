@@ -35,27 +35,17 @@ There is one more thing you need to be careful: since the files in `cgroup` dire
 ```python
 def update_cpu_resources(resource_type, pod_path, value, period=100000):
 
-    path = '/sys/fs/cgroup/cpu/' + pod_path
-
-    if resource_type == "quota":
-        path += '/cpu.cfs_quota_us'
-    elif resource_type == "period":
-        path += '/cpu.cfs_period_us'
-    elif resource_type == "shares":
-        path += '/cpu.shares'
-    else:
-        print(-999)
-        return
+    path = '/sys/fs/cgroup/cpu/' + pod_path + '/cpu.cfs_quota_us'
 
     with open(path, 'r+') as f:
-        data = f.read()
+        old_data = f.read()
         f.seek(0)
         f.write(str(value))
         f.truncate()
         # verify
         f.seek(0)
-        data = f.read()
-        print(data)
+        new_data = f.read()
+        print("old data: %d, new data: %d" % (old_data, new_data))
         f.close()
 ```
 
