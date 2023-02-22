@@ -15,6 +15,8 @@ When a Pod is deployed, no matter via CLI or via a programming library (e.g., th
 
 ![cgroup CPU directory](https://github.com/robin98sun/AmazingLife-Articles/raw/master/tutorials/resources/Screenshot%202023-02-22%20at%204.02.17%20PM.png)
 
+Notice: if the Pod was deployed with CPU resource requirements, e.g., limit and/or require, the root directory for the pod in `cgroup` is `/sys/fs/cgroup/cpu/kubepods`, otherwise, it is `/sys/fs/cgroup/cpu/kubepods/besteffort`.
+
 Then, we notice there are sub-directories with the name `pod***` where `***` is like an UID. OK, let's see if there is the same thing in Kubernetes.
 
 First, find the Pod of your interest. Then, describe it:
