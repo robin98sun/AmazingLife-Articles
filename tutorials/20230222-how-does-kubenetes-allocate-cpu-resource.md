@@ -5,7 +5,7 @@ Before reading this article, please prepare the knowledge of Kubernetes and `cgr
 
 Then, please refer to another article ["layer-by-layer Cgroup in Kubernetes"](https://medium.com/geekculture/layer-by-layer-cgroup-in-kubernetes-c4e26bda676c), which explains the title of this article very well.
 
-When prepared, there is one thing left: how to map the Pods, or even the containers in a Pod, to the specific `cgroup` directory?
+When prepared, there is one thing left: how to map the Pods, or even the containers in a Pod, to the specific `cgroup` directories?
 
 Let's get into the details which is quite simple.
 
