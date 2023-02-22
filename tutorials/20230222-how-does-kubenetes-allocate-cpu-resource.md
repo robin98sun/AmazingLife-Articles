@@ -9,8 +9,13 @@ When prepared, there is one thing left: how to map the Pods, or even the contain
 
 Let's get into the details which is quite simple.
 
-When a Pod is deployed, no matter via CLI or via a programming library (e.g., the library for GoLang "k8s.io/client-go/kubernetes"), most likely we only have a name of the deployment as return. But, that name does not exist in the file system of `cgroup`.
+When a Pod is deployed, no matter via CLI or via a programming library (e.g., the library for GoLang "k8s.io/client-go/kubernetes"), most likely we only have a name of the deployment as return. But, that name does not exist in the file system of `cgroup`, as the following two screenshots show:
 
-[img:https://github.com/robin98sun/AmazingLife-Articles/raw/master/tutorials/resources/Screenshot%202023-02-22%20at%204.02.01%20PM.png]
+![K3s deployments by name](https://github.com/robin98sun/AmazingLife-Articles/raw/master/tutorials/resources/Screenshot%202023-02-22%20at%204.02.01%20PM.png)
 
+![cgroup CPU directory](https://github.com/robin98sun/AmazingLife-Articles/raw/master/tutorials/resources/Screenshot%202023-02-22%20at%204.02.17%20PM.png)
 
+Then, we notice there are sub-directories with the name `pod***` where `***` is like an UID. OK, let's see if there is the same thing in Kubernetes.
+```
+
+```
