@@ -1,7 +1,7 @@
 
 # How does Kubernetes allocate CPU resource
 
-Before reading this article, please prepare the knowledge of Kubernetes and `cgroup` on Linux.
+Before reading this article, please prepare the knowledge of Kubernetes and `cgroup` on Linux, for example ["How to manage cgroups with CPUShares"](https://www.redhat.com/sysadmin/cgroups-part-two#:~:text=The%20CPUShares%20value%20provides%20tasks,shares%20allocated%20to%20the%20cgroup).
 
 Then, please refer to another article ["layer-by-layer Cgroup in Kubernetes"](https://medium.com/geekculture/layer-by-layer-cgroup-in-kubernetes-c4e26bda676c), which explains the title of this article very well.
 
